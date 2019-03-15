@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>1.0.0</Version>
+    <Title>VivaldiSoft.IO</Title>
+    <Authors>VivaldiSoft</Authors>
+    <Company>VivaldiSoft</Company>	
+    <Product>VivaldiSoft.IO</Product>
+    <Description>VivaldiSoft.IO is a cross-platform open-source library which provides helpers and utilities to .NET developers</Description>
+    <Copyright>Copyright © VivaldiSoft 2019</Copyright>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageLicenseUrl>https://github.com/VivaldiSoft/VivaldiSoft.IO/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/VivaldiSoft/VivaldiSoft.IO</PackageProjectUrl>
+    <PackageTags>IO; Helpers; Directory; File</PackageTags>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl> 
+    <RepositoryUrl>https://github.com/VivaldiSoft/VivaldiSoft.IO</RepositoryUrl> 
+    <PackageIconUrl>https://raw.githubusercontent.com/VivaldiSoft/VivaldiSoft.IO/master/icon.png</PackageIconUrl>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile></DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>VivaldiSoft.IO.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Vsxmd" Version="1.3.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
